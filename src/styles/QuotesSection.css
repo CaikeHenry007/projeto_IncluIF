@@ -1,0 +1,47 @@
+.quotes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.quotes-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.quotes-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.quotes-gallery img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.hero-section,
+.quotes-section,
+.partners-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}

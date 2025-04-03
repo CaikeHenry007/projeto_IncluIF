@@ -1,0 +1,21 @@
+.partners-carousel {
+  text-align: center;
+  padding: 0px;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.partner-card {
+  text-align: center;
+  padding: 10px;
+}
+
+.partner-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}

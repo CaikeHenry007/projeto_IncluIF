@@ -1,0 +1,20 @@
+#root {
+  width: 100%; /* Em vez de max-width */
+  padding: 2rem 0; /* Remove margem lateral */
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
