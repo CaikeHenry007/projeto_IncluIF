@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1>NOSSAS ORIGENS</h1>
         <p>Grandes feitos brotam sem esquecermos nossas raízes.</p>
-        <img src={ImagemDestaque} alt="Imagem destaque" />
+        <img src={ImagemDestaque} alt="Imagem destaque" className="imagemDestaque"/>
       </div>
     </section>
   );
