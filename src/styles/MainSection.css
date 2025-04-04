@@ -1,0 +1,125 @@
+.main-section {
+    background-color: #181818;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  /* Cabeçalho */
+  .section-header {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+  
+  .section-header p {
+    font-size: 1.1em;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  /* Vídeo */
+  .video-section {
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Missão e Visão */
+  .mission-vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .mission-vision {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .mission-image {
+    width: 40%;
+    border-radius: 10px;
+  }
+  
+  .mission-content {
+    width: 60%;
+    color: white;
+  }
+  
+  .mission-content h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .mission-content p {
+    font-size: 1.1em;
+    color: #aaa;
+  }
+  
+  /* Valores */
+  .values-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+  }
+  
+  .values-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .values-section p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 10px auto;
+  }
+  
+  .values-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .value-card {
+    width: 120px;
+    height: 120px;
+    background: orange;
+    border-radius: 10px;
+  }
+
+  .video-element {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+  }
+  

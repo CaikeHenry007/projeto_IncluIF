@@ -1,6 +1,6 @@
 #root {
-  width: 100%; /* Em vez de max-width */
-  padding: 2rem 0; /* Remove margem lateral */
+  width: 100%; 
+  padding: 2rem 0;
   text-align: center;
 }
 

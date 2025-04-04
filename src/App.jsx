@@ -1,6 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import QuotesSection from "./components/QuotesSection";
 import PartnersCarousel from "./components/PartnersCarousel";
+import MainSection from "./components/MainSection";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <HeroSection />
       <QuotesSection />
       <PartnersCarousel />
+      <MainSection />
     </div>
   );
 }
