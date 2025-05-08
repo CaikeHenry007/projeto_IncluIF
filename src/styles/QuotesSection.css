@@ -1,11 +1,10 @@
 .quotes-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   max-width: 1200px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
 }
 
 .quotes-section.visible {
@@ -13,35 +12,106 @@
   transform: translateY(0);
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: bold;
+/* Título com linha */
+.quote-title {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  color: black;
 }
 
+.quote-title .line {
+  flex: 1;
+  height: 2px;
+  background-color: black;
+}
+
+.quote-title h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.author {
+  font-size: 0.9rem;
+  color: black;
+  margin-top: 5px;
+}
+
+/* Galeria de imagens */
 .quotes-gallery {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .quotes-gallery img {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
+  flex: 1 1 22%;
+  max-width: 22%;
+  border-radius: 20px;
+  height: 180px;
   object-fit: cover;
 }
 
-.quote {
-  font-style: italic;
-  margin-top: 20px;
+/* Citação + texto descritivo */
+.quote-content {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.hero-section,
-.quotes-section,
-.partners-carousel {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 20px;
+.main-quote {
+  flex: 1;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-style: italic;
+  min-width: 250px;
+  margin: 0;
+  color: black;
+  text-align: right;
+}
+
+.quote-author {
+  display: block;
+  font-size: 0.9rem;
+  font-style: normal;
+  margin-top: 10px;
+  color: black;
+}
+
+.description {
+  flex: 2;
+  font-size: 1rem;
+  color: black;
+  min-width: 250px;
+}
+
+.description p + p {
+  margin-top: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .quote-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quotes-gallery img {
+    max-width: 100%;
+    flex: 1 1 100%;
+    height: auto;
+  }
+
+  .quote-content {
+    flex-direction: column;
+  }
+
+  .main-quote,
+  .description {
+    text-align: left;
+  }
 }

@@ -1,6 +1,13 @@
 .partners-carousel {
   text-align: center;
-  padding: 0px;
+  padding: 50px 20px;
+}
+
+.partners-carousel h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: black;
 }
 
 .slick-slide {
@@ -10,12 +17,67 @@
 
 .partner-card {
   text-align: center;
-  padding: 10px;
+  max-width: 150px;
 }
 
 .partner-card img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto 10px;
+}
+
+.partner-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 5px 0 2px;
+  color: black;
+}
+
+.partner-card p {
+  font-size: 0.9rem;
+  color: black;
+  margin: 0;
+}
+
+/* Custom arrows */
+.custom-arrow {
+  position: absolute;
+  top: 45%;
+  font-size: 7rem;
+  font-weight: lighter;
+  z-index: 1;
+  cursor: pointer;
+  color: black;
+  background: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-arrow.left {
+  left: 20px;
+}
+
+.custom-arrow.right {
+  right: 20px;
+}
+
+/* Dots */
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
 }

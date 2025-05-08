@@ -1,8 +1,7 @@
 import "../styles/MainSection.css";
-
-import video from "../assets/video.mp4";
 import missao from "../assets/missao.jpg";
 import visao from "../assets/visao.jpg";
+import video from "../assets/video.mp4"
 
 const MainSection = () => {
   return (
@@ -21,34 +20,44 @@ const MainSection = () => {
         </p>
       </div>
 
-      {/* Vídeo */}
-      <div className="video-section">
-        <video controls className="video-element">
-          <source src={video} type="video/mp4" />
-          Seu navegador não suporta o elemento de vídeo.
-        </video>
+      {/* Vídeo de destaque com bordas arredondadas */}
+      <div className="highlight-video">
+        <video src={video} controls autoPlay loop muted playsInline />
+      </div>
+
+      {/* Frase */}
+      <div className="quote">
+        <hr />
+        <p>“Sem pilares, nenhuma construção se sustenta”</p>
       </div>
 
       {/* Missão e Visão */}
-      <div className="mission-vision-container">
-        <div className="mission-vision">
-          <img src={missao} alt="Missão" className="mission-image" />
-          <div className="mission-content">
+      <div className="mission-vision-block">
+        <div className="block">
+          <img src={missao} alt="Missão" />
+          <div className="texts">
             <h3>MISSÃO</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et sequi
-              dolor vel assumenda aperiam hic quia facere.
+              Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam
+              hic quia facere. Sed impedit asperiores non dolor autem sit illo
+              provident quo porro corporis! Et odit illo qui Quis natus et magni
+              fugiat! Et rerum autem ut sunt quae qui voluptas animi et alias
+              iure. d eveniet odio ut rerum galisum aut molestiae ipsa sit
+              cumque nisi.
             </p>
           </div>
         </div>
 
-        <div className="mission-vision">
-          <img src={visao} alt="Visão" className="mission-image" />
-          <div className="mission-content">
+        <div className="block">
+          <img src={visao} alt="Visão" />
+          <div className="texts">
             <h3>VISÃO</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et sequi
-              dolor vel assumenda aperiam hic quia facere.
+              Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam
+              hic quia facere. Sed impedit asperiores non dolor autem sit illo
+              provident quo porro corporis! Et odit illo qui Quis natus et magni
+              fugiat! Et rerum autem ut sunt quae qui voluptas animi et alias
+              iure. d eveniet odio ut rerum galisum a ut molestiae ipsa sit.
             </p>
           </div>
         </div>
@@ -56,15 +65,49 @@ const MainSection = () => {
 
       {/* Valores */}
       <div className="values-section">
-        <h2>VALORES</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt.
-        </p>
+        <div className="principal-texts">
+          <h2>VALORES</h2>
+          <p>
+            Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam hic
+            quia facere. Sed impedit asperiores non dolor autem sit illo
+            provident quo porro corporis! Et odit illo qui Quis natus et magni
+            fugiat! Et rerum autem ut sunt quae qui voluptas animi e.
+          </p>
+        </div>
+
         <div className="values-cards">
-          <div className="value-card"></div>
-          <div className="value-card"></div>
-          <div className="value-card"></div>
+          <div className="value-card">
+            <span>1</span>
+            <h4>Equidade</h4>
+            <p>
+              Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam
+              hic quia facere. Sed impedit asperiores non dolor.
+            </p>
+          </div>
+          <div className="value-card">
+            <span>2</span>
+            <h4>Respeito</h4>
+            <p>
+              Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam
+              hic quia facere. Sed impedit asperiores non dolor.
+            </p>
+          </div>
+          <div className="value-card">
+            <span>3</span>
+            <h4>Diversidade</h4>
+            <p>
+              Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam
+              hic quia facere. Sed impedit asperiores non dolor.
+            </p>
+          </div>
+          <div className="value-card">
+            <span>4</span>
+            <h4>Empatia</h4>
+            <p>
+              Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam
+              hic quia facere. Sed impedit asperiores non dolor.
+            </p>
+          </div>
         </div>
       </div>
     </section>

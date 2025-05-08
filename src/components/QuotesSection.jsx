@@ -11,8 +11,13 @@ const QuotesSection = () => {
 
   return (
     <section ref={ref} className={`quotes-section ${inView ? "visible" : ""}`}>
-      <h2>“O que a memória ama fica eterno”</h2>
-      <p>Adélia Prado, poetisa e professora brasileira</p>
+      <div className="quote-title">
+        <div className="line"></div>
+        <div>
+          <h2>“O que a memória ama fica eterno”</h2>
+          <p className="author">Adélia Prado, poetisa e professora brasileira</p>
+        </div>
+      </div>
 
       <div className="quotes-gallery">
         <img src={imagem1} alt="Pincéis" />
@@ -21,11 +26,25 @@ const QuotesSection = () => {
         <img src={imagem4} alt="Homem sorrindo" />
       </div>
 
-      <p className="quote">
-        “Eu sozinha ando bem, mas com você ando melhor.”
-        <br />
-        <span>- Cora Coralina, poetisa brasileira</span>
-      </p>
+      <div className="quote-content">
+        <blockquote className="main-quote">
+         “Eu sozinha ando bem, mas com você ando melhor.”
+          <span className="quote-author">Cora Coralina, poetisa brasileira</span>
+        </blockquote>
+        <div className="description">
+          <p>
+            Lorem ipsum dolor sit amet. Et sequi dolor vel assumenda aperiam hic quia facere. Sed
+            impedit asperiores non dolor autem sit illo provident quo porro corporis! Et odit illo
+            qui Quis natus et magni fugiat! Et rerum autem ut sunt quae qui voluptas animi et alias
+            iure.
+          </p>
+          <p>
+            Id eveniet odio ut rerum galisum aut molestiae ipsa sit cumque nisi. Aut harum corrupti
+            eos maxime ipsum vel ducimus galisum. Id dolore totam At voluptatem nostrum non velit
+            vitae est harum labore. Cum sapiente cumque quo dolores dolorum et magnam voluptatem.
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
