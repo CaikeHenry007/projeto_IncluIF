@@ -2,10 +2,11 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  padding-top: 0em;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #ffffff;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,8 +19,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh; /* Garante altura total */
-  display: block; /* Remove o flex que estava limitando */
+  min-height: 100vh;
+  display: block; 
 }
 
 h1 {

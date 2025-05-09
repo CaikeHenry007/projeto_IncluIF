@@ -5,31 +5,35 @@ p {
 .hero-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 0px 0px 0px 7em;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s ease-in-out;
+  background-color: white;
 }
 
 .hero-section.visible {
   opacity: 1;
   transform: translateY(0);
+  align-items: center;
 }
 
 .hero-title {
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0.5em;
   color: black;
 }
 
 .hero-image-wrapper {
   position: relative;
-  width: 100%;
+  width: 90%;
+  height: 35em;
   overflow: hidden;
   border-radius: 30px;
   margin-bottom: 40px;
+  box-shadow: 0 4px 10px #606060;
 }
 
 .imagemDestaque {
@@ -41,16 +45,16 @@ p {
 
 .seta-icon {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
-  background-color: black;
-  border-radius: 50%;
+  bottom: 0em;
+  right: 1.5em;
+  background-color: white;
+  border-radius: 30% 30% 0% 0%;
   padding: 10px;
 }
 
 .seta-icon img {
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-text-container {

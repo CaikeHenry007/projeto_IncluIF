@@ -1,10 +1,10 @@
 import { useInView } from "react-intersection-observer";
 import "../styles/QuotesSection.css";
 
-import imagem1 from "../assets/image1.jpg";
-import imagem2 from "../assets/image2.jpg";
-import imagem3 from "../assets/image3.jpg";
-import imagem4 from "../assets/image4.jpg";
+import pinceis from "../assets/pinceis.png";
+import mao from "../assets/mao.png";
+import cachorro from "../assets/cachorro.png";
+import idoso from "../assets/idoso.png";
 
 const QuotesSection = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -20,10 +20,10 @@ const QuotesSection = () => {
       </div>
 
       <div className="quotes-gallery">
-        <img src={imagem1} alt="Pincéis" />
-        <img src={imagem2} alt="Mão esculpindo" />
-        <img src={imagem3} alt="Homem segurando cachorro" />
-        <img src={imagem4} alt="Homem sorrindo" />
+        <img src={pinceis} alt="Pincéis" />
+        <img src={mao} alt="Mão esculpindo" />
+        <img src={cachorro} alt="Homem segurando cachorro" />
+        <img src={idoso} alt="Homem idoso sorrindo" />
       </div>
 
       <div className="quote-content">

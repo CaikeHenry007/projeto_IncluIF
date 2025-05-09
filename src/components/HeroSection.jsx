@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import "../styles/HeroSection.css";
-import ImagemDestaque from "../assets/image.jpg";
-// import SetaIcone from "../assets/seta.png"; // ícone de seta
+import ImagemDestaque from "../assets/praia.png";
+import SetaIcone from "../assets/seta.png"; 
 
 const HeroSection = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="hero-image-wrapper">
         <img src={ImagemDestaque} alt="Imagem destaque" className="imagemDestaque" />
         <div className="seta-icon">
-          {/* <img src={SetaIcone} alt="Seta para baixo" /> */}
+           <img src={SetaIcone} alt="Seta para baixo" />
         </div>
       </div>
 
